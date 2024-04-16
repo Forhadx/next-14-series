@@ -5,11 +5,8 @@ import { NextResponse } from "next/server";
 export const GET = async () => {
   await connectDB();
 
-  let userData = await UserModel.create({
-    username: "<NAME>",
-    email: "<EMAIL>",
-    password: "<PASSWORD>",
-  });
+  let userData = await UserModel.find();
+
   return new NextResponse(
     JSON.stringify({
       data: userData,

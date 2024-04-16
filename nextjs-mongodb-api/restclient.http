@@ -2,17 +2,21 @@
 GET http://localhost:3000/api
 
 
-### 
+### All User
 GET http://localhost:3000/api/user
 
+
+### Single User
+GET http://localhost:3000/api/user/661b5bdb83672fa8d499bec9
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjp7Il9pZCI6IjY2MWI1YmRiODM2NzJmYThkNDk5YmVjOSIsImVtYWlsIjoiYUBnbWFpbC5jb20iLCJyb2xlIjoidXNlciJ9LCJleHBpcmVzSW4iOiIzNjVkIiwiaWF0IjoxNzEzMDg5MzcwfQ.VlcH-tyLdMcPGS6M5_VGVieWhztI7GqiSWRbPY6CWyk
 
 ### Signup
 POST  http://localhost:3000/api/user/signup HTTP/1.1
 content-type: application/json
 
 {
-    "userName": "John",
-    "email": "a@gmail.com",
+    "userName": "ruby",
+    "email": "b@gmail.com",
     "password": "123456"
 }
 
